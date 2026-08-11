@@ -25,7 +25,7 @@ applies to customer churn, credit risk, or employee attrition.
 - Cleans a real-world dataset with **three different types of missing data**, each handled with a distinct, justified strategy
 - Uncovers a clear, statistically strong survival hierarchy across **gender, class, and age**
 - Shows how combining two variables (class + gender) reveals a relationship neither shows alone
-- Trains and evaluates a **baseline logistic regression model**, achieving 79.9% accuracy
+- Trains and evaluates a **baseline logistic regression model**, achieving 79.89% accuracy
 - Confirms EDA findings independently through **model feature importance** — the model "discovers" the same patterns as the manual analysis
 
 ## Dataset Overview
@@ -64,10 +64,11 @@ to cross-check EDA conclusions.
 ![Survival Rate by Class and Gender](outputs/survival_by_class_gender.png)
 
 ## Model Results
+A baseline Logistic Regression model was trained using passenger class, sex, age, family relationships, fare, and embarkation port as predictors. The model achieved 79.89% accuracy on the held-out test set.
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | **79.9%** |
+| Accuracy | **79.89%** |
 | Precision (Survived) | 0.77 |
 | Recall (Survived) | 0.73 |
 | F1-score (Survived) | 0.75 |
